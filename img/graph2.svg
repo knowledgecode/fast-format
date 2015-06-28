@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800px" height="300px" viewBox="0 0 800 300" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <line x1="100" y1="0" x2="100" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="120" y1="0" x2="120" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="140" y1="0" x2="140" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="160" y1="0" x2="160" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="180" y1="0" x2="180" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="200" y1="0" x2="200" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="220" y1="0" x2="220" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="240" y1="0" x2="240" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="260" y1="0" x2="260" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="280" y1="0" x2="280" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="300" y1="0" x2="300" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="320" y1="0" x2="320" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="340" y1="0" x2="340" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="360" y1="0" x2="360" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="380" y1="0" x2="380" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="400" y1="0" x2="400" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="420" y1="0" x2="420" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="440" y1="0" x2="440" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="460" y1="0" x2="460" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="480" y1="0" x2="480" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="500" y1="0" x2="500" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="520" y1="0" x2="520" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="540" y1="0" x2="540" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="560" y1="0" x2="560" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="580" y1="0" x2="580" y2="100" stroke="silver" stroke-width="1" />
+  <line x1="100" y1="100" x2="600" y2="100" stroke="silver" stroke-width="1" />
+
+  <rect x="100" y="10" width="168.68" height="20" stroke="green" stroke-width="1" fill="lime" />
+  <rect x="100" y="40" width="270.33" height="20" stroke="green" stroke-width="1" fill="lime" />
+  <rect x="100" y="70" width="387.55" height="20" stroke="green" stroke-width="1" fill="lime" />
+
+  <g font-size="12" font-family="monospace">
+    <text x="5" y="25">fast-format</text>
+    <text x="5" y="50">util.format</text>
+    <text x="5" y="60">+ browserify</text>
+    <text x="5" y="85">sprintf-js</text>
+  </g>
+  <g font-size="10" font-family="monospace">
+    <text x="100" y="115">0</text>
+    <text x="200" y="115">15,000</text>
+    <text x="300" y="115">30,000</text>
+    <text x="400" y="115">45,000</text>
+    <text x="500" y="115">60,000</text>
+    <text x="565" y="115">[msec]</text>
+  </g>
+</svg>
