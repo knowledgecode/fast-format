@@ -1,0 +1,34 @@
+{
+  "name": "fast-format",
+  "version": "0.1.0",
+  "description": "A simplified version of Node.js util.format()",
+  "main": "fast-format.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.5",
+    "mocha-phantomjs": "^3.5.3"
+  },
+  "scripts": {
+    "test": "mocha test/test.js && mocha-phantomjs test/test.html",
+    "compile": "./compile"
+  },
+  "keywords": [
+    "fast",
+    "util",
+    "format",
+    "sprintf"
+  ],
+  "author": "KNOWLEDECODE",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowledgecode/fast-format.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knowledgecode/fast-format/issues"
+  },
+  "homepage": "https://github.com/knowledgecode/fast-format#readme"
+}
