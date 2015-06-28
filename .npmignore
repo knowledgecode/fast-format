@@ -2,4 +2,5 @@
 bower.json
 *.yml
 compile
+img
 test
