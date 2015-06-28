@@ -1,4 +1,4 @@
-# fast-format
+# fast-format [![Circle CI](https://circleci.com/gh/knowledgecode/fast-format.svg?style=shield)](https://circleci.com/gh/knowledgecode/fast-format)
 This is a simplified version of Node.js `util.format()`. This supports only `%s` placeholder, but faster than that. This will be the best solution if you need speed rather than complex formatting.
 
 ## Usage
