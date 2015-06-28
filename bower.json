@@ -1,7 +1,7 @@
 {
   "name": "fast-format",
   "main": "fast-format.min.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/knowledgecode/fast-format",
   "authors": [
     "knowledgecode <knowledgecode@gmail.com>"
