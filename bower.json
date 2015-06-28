@@ -16,6 +16,7 @@
     "**/.*",
     "bower_components",
     "compile",
+    "img",
     "node_modules",
     "test",
     "*.json",
