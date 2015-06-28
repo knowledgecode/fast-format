@@ -1,4 +1,6 @@
 .*
+benchmark
+bower_components
 bower.json
 *.yml
 compile
