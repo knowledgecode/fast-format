@@ -1,8 +1,8 @@
+*.sh
+*.yml
 .*
 benchmark
-bower_components
 bower.json
-*.yml
-compile
+bower_components
 img
 test
