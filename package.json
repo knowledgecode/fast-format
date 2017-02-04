@@ -1,19 +1,19 @@
 {
   "name": "fast-format",
-  "version": "0.1.1",
-  "description": "A simplified version of Node.js util.format()",
+  "version": "0.2.0",
+  "description": "A fast, simple string formatter like util.format() method in Node.js",
   "main": "fast-format.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^2.2.5",
-    "mocha-phantomjs": "^3.5.3"
+    "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.1.0"
   },
   "scripts": {
     "test": "mocha test/test.js && mocha-phantomjs test/test.html",
-    "compile": "./compile"
+    "compile": "./compile.sh fast-format.js fast-format.min.js"
   },
   "keywords": [
     "fast",

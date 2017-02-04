@@ -1,12 +1,12 @@
 {
   "name": "fast-format",
   "main": "fast-format.min.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/knowledgecode/fast-format",
   "authors": [
     "knowledgecode <knowledgecode@gmail.com>"
   ],
-  "description": "A simplified version of Node.js util.format()",
+  "description": "A fast, simple string formatter like util.format() method in Node.js",
   "moduleType": [
     "amd",
     "globals",
@@ -15,11 +15,11 @@
   "ignore": [
     "**/.*",
     "bower_components",
-    "compile",
     "img",
     "node_modules",
     "test",
     "*.json",
+    "*.sh",
     "*.yml"
   ],
   "keywords": [
