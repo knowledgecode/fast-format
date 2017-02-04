@@ -48,7 +48,7 @@ console.log(Date.now() - s);
 
 *environment1: Core i7 2.2GHz + Node.js v6.9.5*
 
-<img src="https://rawgit.com/knowledgecode/fast-format/master/img/graph1.svg">
+<img src="https://cdn.rawgit.com/knowledgecode/fast-format/ee4147a012f4d179c84e94a5f549f741fb5a5069/img/graph1.svg">
 
 | module      | time        | bench |
 |-------------|-------------|:-----:|
@@ -59,7 +59,7 @@ console.log(Date.now() - s);
 ---
 *environment2: Core i7 2.2GHz + Google Chrome 56.0.2924.87*
 
-<img src="https://rawgit.com/knowledgecode/fast-format/master/img/graph2.svg">
+<img src="https://cdn.rawgit.com/knowledgecode/fast-format/ee4147a012f4d179c84e94a5f549f741fb5a5069/img/graph2.svg">
 
 | module      | time        | bench |
 |-------------|-------------|:-----:|
