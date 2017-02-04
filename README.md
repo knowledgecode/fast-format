@@ -1,49 +1,73 @@
-# fast-format [![Circle CI](https://circleci.com/gh/knowledgecode/fast-format.svg?style=shield)](https://circleci.com/gh/knowledgecode/fast-format)
-This is a simplified version of Node.js `util.format()`. This supports only `%s` placeholder, but faster than that. This will be the best solution if you need speed rather than complex formatting.
+# fast-format
+[![Circle CI](https://circleci.com/gh/knowledgecode/fast-format.svg?style=shield)](https://circleci.com/gh/knowledgecode/fast-format)
+
+This is a string formatter like `util.format()` method in Node.js, supports just only `%s` placeholder but accordingly faster than that. It will be one of the best solution if need a speed rather than complex formatting.
 
 ## Usage
-Same as Node.js `util.format()`.
+Same as `util.format()` method.
 ```js
 format(formatString[, ...])
 ```
 
+If use one formatting repeatedly, recommended to compile the `formatString` in advance.
+```js
+format.compile(formatString)
+```
+
 ## Example
 ```js
-var s = format('%s, %s!', 'Hello', 'world');
+let s = format('%s, %s!', 'Hello', 'world');
 console.log(s);     // => 'Hello, world!'
+```
+```js
+let f = format.compile('%s, %s!');
+let s1 = f('Hello', 'world');
+console.log(s1);    // => 'Hello, world!'
+let s2 = f('Howdy', 'World');
+console.log(s2);    // => 'Howdy, World!'
 ```
 
 ## Benchmark
 ```js
-var i, len, s = Date.now();
-for (i = 0, len = 10000000; i < len; i++) {
+// Bench 1
+let s = Date.now();
+for (let i = 0, len = 100000000; i < len; i++) {
     format('i = %s, len = %s', i, len);
 }
 console.log(Date.now() - s);
 ```
+```js
+// Bench 2
+let s = Date.now();
+let f = format.compile('i = %s, len = %s');
+for (let i = 0, len = 100000000; i < len; i++) {
+    f(i, len);
+}
+console.log(Date.now() - s);
+```
 
-*environment1: MacBook Air Early 2015 + Node.js v0.12.5*
+*environment1: Core i7 2.2GHz + Node.js v6.9.5*
 
 <img src="https://rawgit.com/knowledgecode/fast-format/master/img/graph1.svg">
 
-| module      | time        |
-|-------------|-------------|
-| fast-format |  2,072 msec |
-| util.format | 11,571 msec |
-| sprintf-js  | 19,438 msec |
+| module      | time        | bench |
+|-------------|-------------|:-----:|
+| fast-format | 12,388 msec |     2 |
+| fast-format | 22,039 msec |     1 |
+| util.format | 28,659 msec |     1 |
 
 ---
-*environment2: Core i7 2.5GHz Windows 8.1 Pro + Internet Explorer 11*  
+*environment2: Core i7 2.2GHz + Google Chrome 56.0.2924.87*
 
 <img src="https://rawgit.com/knowledgecode/fast-format/master/img/graph2.svg">
 
-| module      | time        |
-|-------------|-------------|
-| fast-format | 25,302 msec |
-| util.format | 40,550 msec |
-| sprintf-js  | 58,133 msec |
+| module      | time        | bench |
+|-------------|-------------|:-----:|
+| fast-format | 12,898 msec |     2 |
+| fast-format | 22,705 msec |     1 |
+| util.format | 99,103 msec |     1 |
 
-[sprintf-js](https://github.com/alexei/sprintf.js) is a JavaScript sprintf implementation for the browser and Node.js. It is slow but might not be inevitable because a high functional module.  
+The `util.format()` method was converted with `Browserify` to run on the browser.
 
 ## Installation
 ### via npm
@@ -51,14 +75,18 @@ console.log(Date.now() - s);
 npm install fast-format --save
 ```
 
-### via bower
+### via Bower
 ```sh
 bower install fast-format
 ```
 
+### directly (in case of the browser)
+``` html
+<script src="/path/to/fast-format.min.js"></script>
+```
+
 ## Browser Support
-Chrome, Firefox, Safari, Opera, and Internet Explorer 6+
+Google Chrome, Firefox, Safari, Opera, Microsoft Edge and IE 6+
 
 ## License
 MIT
-
